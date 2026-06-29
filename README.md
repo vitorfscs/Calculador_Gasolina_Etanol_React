@@ -1,75 +1,71 @@
-# React + TypeScript + Vite
+Parabéns por criar o seu projeto em React! Construir aplicações práticas é a melhor forma de fixar os conceitos da biblioteca.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aqui está um modelo de README.md completo, bem estruturado e profissional para o seu repositório. Ele vai valorizar o seu portfólio e mostrar claramente o que você aprendeu.
 
-Currently, two official plugins are available:
+Markdown
+# ⛽ Calculador Gasolina vs. Etanol (React)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Uma calculadora simples e eficiente desenvolvida em React para ajudar motoristas a decidirem qual combustível vale mais a pena abastecer: **Gasolina** ou **Etanol (Álcool)**.
 
-## React Compiler
+O cálculo baseia-se na regra geral de que o etanol é vantajoso se o seu preço for menor que **70%** do preço da gasolina.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Cálculo em Tempo Real:** Descubra instantaneamente qual combustível é mais vantajoso após inserir os valores.
+* **Interface Responsiva:** Design simples, limpo e adaptável para telas de celulares e computadores.
+* **Validação de Campos:** Evita erros de cálculo caso os campos estejam vazios.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 Como funciona a lógica?
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+A aplicação utiliza o seguinte cálculo matemático padrão:
 
-```
+$$\text{Relação} = \frac{\text{Preço do Etanol}}{\text{Preço da Gasolina}}$$
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* Se o resultado for **menor que 0.70**, o **Etanol** é o mais vantajoso.
+* Se o resultado for **maior ou igual a 0.70**, a **Gasolina** é a mais vantajosa.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tecnologias Utilizadas
 
-```
+Este projeto foi construído utilizando as seguintes tecnologias:
+
+* [React](https://react.dev/) - Biblioteca JavaScript para construção de interfaces.
+* [JavaScript (ES6+)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - Lógica de programação.
+* [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) - Estilização da interface.
+
+---
+
+## 📖 Aprendizados neste projeto (Estudos de React)
+
+Como este é um projeto focado no meu aprendizado em React, pratiquei os seguintes conceitos fundamentais:
+
+1. **Componentização:** Divisão da interface em partes menores e reutilizáveis.
+2. **Gerenciamento de Estado (`useState`):** Manipulação dos valores dos inputs e do resultado final de forma dinâmica.
+3. **Manipulação de Eventos (`onChange` e `onSubmit`):** Captura dos dados digitados pelo usuário e controle do envio do formulário.
+4. **Renderização Condicional:** Exibição do resultado na tela apenas quando o cálculo for executado.
+
+---
+
+## 🏁 Como Rodar o Projeto Localmente
+
+Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com) e do [Node.js](https://nodejs.org/) instalados.
+
+No seu terminal, siga os passos abaixo:
+
+```bash
+# 1. Clone este repositório
+$ git clone [https://github.com/vitorfscs/Calculador_Gasolina_Etanol_React.git](https://github.com/vitorfscs/Calculador_Gasolina_Etanol_React.git)
+
+# 2. Acesse a pasta do projeto
+$ cd Calculador_Gasolina_Etanol_React
+
+# 3. Instale as dependências
+$ npm install
+
+# 4. Inicie a aplicação em modo de desenvolvimento
+$ npm start
