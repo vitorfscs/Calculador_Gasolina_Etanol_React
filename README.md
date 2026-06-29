@@ -1,8 +1,3 @@
-Parabéns por criar o seu projeto em React! Construir aplicações práticas é a melhor forma de fixar os conceitos da biblioteca.
-
-Aqui está um modelo de README.md completo, bem estruturado e profissional para o seu repositório. Ele vai valorizar o seu portfólio e mostrar claramente o que você aprendeu.
-
-Markdown
 # ⛽ Calculador Gasolina vs. Etanol (React)
 
 Uma calculadora simples e eficiente desenvolvida em React para ajudar motoristas a decidirem qual combustível vale mais a pena abastecer: **Gasolina** ou **Etanol (Álcool)**.
